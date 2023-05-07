@@ -11,21 +11,19 @@
 
 
 }
-body 
-main { 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-
-}
 header{
-    background-color: green;
-    color: white;
-    font-size: 20px;
+  background-color: #718096;
+  color: white;
+  font-size: 20px;
 
 }
+.graident-color{
+  height: 500px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,31,45,0.5944502801120448) 45%, rgba(2,0,36,1) 100%);
+
+}
+
 ul {
 list-style-type: none;
 display: flex;
@@ -36,7 +34,19 @@ ul li {
     padding: 10px
   }
 
-.biocontainer {
+body {
+
+}
+main { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}
+
+.bio-container {
   justify-content: center;
   border: solid black 2px;
   width: var(--width);
@@ -53,16 +63,21 @@ ul li {
 }
 
 .feature-container .box {
-  height: 100x;
   width: 250px;
+  height: 725px;
   border: solid black 1px;
-  margin: 10px; 
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .feature-container img {
   width: 50px;
   height: 50px;
 
 }
+
 .extracontainer {
     justify-content: center;
     border: solid black 2px;
@@ -73,13 +88,36 @@ ul li {
     align-items: center; 
   }
 
-  .extracontainer .box{
-    height: 375px;
-    width: 725px;
-    border: solid black 1px;
-    margin: 10px; 
+.extracontainer .box {
+  height: 375px;
+  width: 725px;
+  border: solid black 1px;
+  margin: 10px; 
   }
+.extracontainer figure {
+  position: relative;
+}
+.feature-container figure img{
+  transition: box-shadow 0.3s ease;
+} 
+
  
+.extracontainer figure img {
+ 
+  position: relative;
+  float: right;
+  transition: box-shadow 0.3s ease;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.feature-container figure.box img:hover, 
+.extracontainer figure.box img:hover {
+  -webkit-box-shadow: 18px 18px 5px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 18px 18px 5px 8px rgba(0,0,0,0.75);
+  box-shadow: 18px 18px 5px 8px rgba(0,0,0,0.75);
+}
+
+
 img {
   width: 400px;
   height: 200px;
@@ -94,4 +132,32 @@ h2{
 footer{
   background-color: gray;
   height: 200px;
+}
+figcaption {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right:10px;
+  flex-wrap: wrap;
+}
+a {
+font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .feature-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature-container .box {
+    width: 725px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature-container .box img {
+    align-items: flex-end;
+  }
 }
