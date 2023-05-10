@@ -79,7 +79,6 @@ main {
 .feature-container .box {
   width: 250px;
   height: 450px;
-  border: solid black 1px;
   margin: 10px;
   display: flex;
   align-items: center;
@@ -139,12 +138,13 @@ main {
   margin-top: 10px;
   margin-right: 10px;
 }
-.feature-container figure img,.extracontainer figure img {
+.feature-container figure img,.extracontainer figure img, .contact figure.box img:hover {
   transition: box-shadow 0.3s ease;
 } 
 
 .feature-container figure.box img:hover, 
-.extracontainer figure.box img:hover {
+.extracontainer figure.box img:hover, 
+.contact figure.box img:hover{
   -webkit-box-shadow: 18px 18px 5px 8px rgba(0,0,0,0.75);
   -moz-box-shadow: 18px 18px 5px 8px rgba(0,0,0,0.75);
   box-shadow: 18px 18px 5px 8px rgba(0,0,0,0.75);
@@ -164,6 +164,9 @@ h2{
   color:orange;
   width: 750px;
   margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom:10px;
+
 }
 footer{
   background-color: gray;
@@ -175,6 +178,14 @@ figcaption {
 }
 .extracontainer figure.box figcaption {
   margin-right:300px;
+}
+.contact {
+  height: 400px;
+  width: 750px;
+}
+.contact img {
+  float:right
+
 }
 
 html {
