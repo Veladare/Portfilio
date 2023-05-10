@@ -22,4 +22,4 @@ Please refer to the LICENSE in the repo.
 
 ## Screenshot
 
-(https://user-images.githubusercontent.com/126302466/236098048-ba36ccee-b6d9-4e77-b256-a4d869b22ca2.png)
+(https://github.com/Veladare/prework-study-guide/assets/126302466/c1fdec40-1ff6-406e-bd89-059147f15f7e)
